@@ -1,0 +1,117 @@
+#website, body
+{
+    padding: 0%;
+    margin: 0%;
+    height: 100vh;
+    width: 100vw;
+}
+#website
+{
+    --primary-color: rgb(129, 107, 129);
+    --secondary-color: rgb(2, 0, 34);
+    --project-text-color: rgb(3, 0, 27);
+    --distinct-link-color: rgb(9, 0, 78);
+    --projects-border-color: black;
+    font-size: 2.5vh;
+    font-family: sans-serif;
+    background-color: var(--primary-color);
+    background-image: linear-gradient(var(--secondary-color), var(--primary-color));
+}
+#Projects
+{
+    border: solid 0.1vmin var(--projects-border-color);
+    font-size: 2.5vmin;
+    color: var(--project-text-color);
+    text-align: center;
+    border-radius: 2%;
+    border-top-left-radius: 7%;
+    border-bottom-right-radius: 7%;
+    background-size: cover;
+    position:fixed;
+    left: 34%;
+    top: 15%;
+    right: 34%;
+    bottom: 13%;
+    background-color: var(--secondary-color);
+    background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+}
+ul
+{
+    text-align: left;
+    padding-left: 10%;
+}
+a
+{
+    color: var(--project-text-color);
+}
+#Name
+{
+    position: fixed;
+
+    padding: 0.6%;
+    padding-bottom: 0%;
+
+    height: 8%;
+    width: 100%;
+    top:1%;
+
+    background-size: cover;
+    background-color: black;
+    font-family: 'Times New Roman';
+    color: white;
+}
+#Name img
+{
+    vertical-align: text-bottom;
+    height: 6vmin;
+}
+#Name h1
+{
+    vertical-align: center;
+    display:inline;
+}
+#Name a
+{
+    all: inherit;
+}
+a.blue
+{
+    color: var(--distinct-link-color);
+}
+#color-presets
+{
+    background-color: black;
+    border: white 0.3vh solid;
+    border-radius: 3vh;
+    position: absolute;
+    bottom: 3vh;
+    left: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+}
+button
+{
+    margin: 1vh;
+    border: solid 0.1vh;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 10vw;
+}
+#default
+{
+    background-image: linear-gradient(rgb(129, 107, 129), rgb(2, 0, 34));
+}
+#high_contrast
+{
+    background-color: cyan;
+}
+#high_contrast_theme:target ~ #website
+{
+    --primary-color: #101010;
+    --secondary-color: #101010;
+    --project-text-color: cyan;
+    --distinct-link-color: yellow;
+    --projects-border-color: white;
+}
