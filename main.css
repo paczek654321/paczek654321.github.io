@@ -1,0 +1,57 @@
+:root
+{
+    --primary-color: rgb(196, 166, 196);
+    --secondary-color: rgb(2, 0, 34);
+}
+body
+{
+    font-size: 2.5vh;
+    font-family: sans-serif;
+    padding: 0%;
+    margin: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+    background-image: linear-gradient(var(--secondary-color), var(--primary-color));
+}
+#Projects
+{
+    font-size: 3vh;
+    color: rgb(3, 0, 27);
+    text-align: center;
+    border-radius: 10%;
+    background-size: cover;
+    position:fixed;
+    left: 34%;
+    top: 15%;
+    right: 34%;
+    bottom: 13%;
+    background-color: var(--secondary-color);
+    background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+}
+ul
+{
+    text-align: left;
+}
+a
+{
+    color: rgb(3, 0, 27);
+}
+#Name
+{
+    position: fixed;
+    margin: 0;
+    margin-top: 1vh;
+    padding: 1vh;
+    padding-top: 0;
+    padding-left: 1vw;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 89vh;
+    background-size: cover;
+    background-color: black;
+    font-family: 'Times New Roman';
+    color: white;
+    
+}
