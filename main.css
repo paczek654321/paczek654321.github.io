@@ -71,3 +71,7 @@ a
 {
     all: inherit;
 }
+a.blue
+{
+    color: rgb(9, 0, 78);
+}
