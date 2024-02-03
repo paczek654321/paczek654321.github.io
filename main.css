@@ -16,10 +16,13 @@ body
 }
 #Projects
 {
-    font-size: 3vh;
+    border: solid 0.1vmin black;
+    font-size: 3vmin;
     color: rgb(3, 0, 27);
     text-align: center;
-    border-radius: 10%;
+    border-radius: 2%;
+    border-top-left-radius: 7%;
+    border-bottom-right-radius: 7%;
     background-size: cover;
     position:fixed;
     left: 34%;
@@ -32,6 +35,7 @@ body
 ul
 {
     text-align: left;
+    padding-left: 10%;
 }
 a
 {
@@ -40,18 +44,30 @@ a
 #Name
 {
     position: fixed;
-    margin: 0;
-    margin-top: 1vh;
-    padding: 1vh;
-    padding-top: 0;
-    padding-left: 1vw;
-    top:0;
-    left:0;
-    right:0;
-    bottom: 89vh;
+
+    padding: 0.6%;
+    padding-bottom: 0%;
+
+    height: 8%;
+    width: 100%;
+    top:1%;
+
     background-size: cover;
     background-color: black;
     font-family: 'Times New Roman';
     color: white;
-    
+}
+#Name img
+{
+    vertical-align: text-bottom;
+    height: 6vmin;
+}
+#Name h1
+{
+    vertical-align: center;
+    display:inline;
+}
+#Name a
+{
+    all: inherit;
 }
