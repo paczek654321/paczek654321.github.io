@@ -20,7 +20,7 @@ body
 {
     border: solid 0.1vmin black;
     font-size: 3vmin;
-    color: var(--project-link-color);
+    color: var(--project-text-color);
     text-align: center;
     border-radius: 2%;
     border-top-left-radius: 7%;
@@ -41,7 +41,7 @@ ul
 }
 a
 {
-    color: var(--project-link-color);
+    color: var(--project-text-color);
 }
 #Name
 {
