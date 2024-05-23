@@ -2,6 +2,8 @@
 {
     --primary-color: rgb(129, 107, 129);
     --secondary-color: rgb(2, 0, 34);
+    --project-text-color: rgb(3, 0, 27);
+    --distinct-link-color: rgb(9, 0, 78);
 }
 body
 {
@@ -18,7 +20,7 @@ body
 {
     border: solid 0.1vmin black;
     font-size: 3vmin;
-    color: rgb(3, 0, 27);
+    color: var(--project-link-color);
     text-align: center;
     border-radius: 2%;
     border-top-left-radius: 7%;
@@ -39,7 +41,7 @@ ul
 }
 a
 {
-    color: rgb(3, 0, 27);
+    color: var(--project-link-color);
 }
 #Name
 {
@@ -73,5 +75,5 @@ a
 }
 a.blue
 {
-    color: rgb(9, 0, 78);
+    color: var(--distinct-link-color);
 }
