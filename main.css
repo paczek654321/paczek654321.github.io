@@ -77,3 +77,27 @@ a.blue
 {
     color: var(--distinct-link-color);
 }
+#color-presets
+{
+    position: absolute;
+    bottom: 5vh;
+    left: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+}
+button
+{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10vw;
+}
+#default
+{
+    background-color: linear-gradient(rgb(129, 107, 129), rgb(2, 0, 34));
+}
+#high_contrast
+{
+    background-color: cyan;
+}
