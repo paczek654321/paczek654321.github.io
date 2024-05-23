@@ -2,10 +2,10 @@ const colors =
 {
     "default":
     {
-        "primary-color": rgb(129, 107, 129),
-        "secondary-color": rgb(2, 0, 34),
-        "project-text-color": rgb(3, 0, 27),
-        "distinct-link-color": rgb(9, 0, 78)
+        "primary-color": "rgb(129, 107, 129)",
+        "secondary-color": "rgb(2, 0, 34)",
+        "project-text-color": "rgb(3, 0, 27)",
+        "distinct-link-color": "rgb(9, 0, 78)"
     },
     "high_contrast":
     {

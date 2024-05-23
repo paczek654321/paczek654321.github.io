@@ -89,8 +89,8 @@ a.blue
 }
 button
 {
-    width: 10vw;
-    height: 10vw;
+    width: 10vh;
+    height: 10vh;
     border-radius: 10vw;
 }
 #default
