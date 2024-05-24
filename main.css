@@ -1,9 +1,10 @@
 :root
 {
-    --primary-color: rgb(129, 107, 129);
-    --secondary-color: rgb(2, 0, 34);
-    --project-text-color: rgb(3, 0, 27);
-    --distinct-link-color: rgb(9, 0, 78);
+    --primary-color: black;
+    --secondary-color: black;
+    --project-text-color: black;
+    --distinct-link-color: black;
+    --projects-border-color: black;
 }
 body
 {
@@ -18,7 +19,7 @@ body
 }
 #Projects
 {
-    border: solid 0.1vmin black;
+    border: solid 0.1vmin var(--projects-border-color);
     font-size: 3vmin;
     color: var(--project-text-color);
     text-align: center;
@@ -79,9 +80,12 @@ a.blue
 }
 #color-presets
 {
+    background-color: black;
+    border: white 0.3vh solid;
+    border-radius: 3vh;
     position: absolute;
-    bottom: 5vh;
-    left: 5vw;
+    bottom: 3vh;
+    left: 1.5vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -89,13 +93,15 @@ a.blue
 }
 button
 {
+    margin: 1vh;
+    border: solid 0.1vh;
     width: 10vh;
     height: 10vh;
     border-radius: 10vw;
 }
 #default
 {
-    background-color: linear-gradient(rgb(129, 107, 129), rgb(2, 0, 34));
+    background-image: linear-gradient(rgb(129, 107, 129), rgb(2, 0, 34));
 }
 #high_contrast
 {
