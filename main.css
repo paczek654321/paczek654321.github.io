@@ -1,13 +1,10 @@
-:root
+#website, body
 {
-    --primary-color: black;
-    --secondary-color: black;
-    --project-text-color: black;
-    --distinct-link-color: black;
+    --primary-color: rgb(129, 107, 129);
+    --secondary-color: rgb(2, 0, 34);
+    --project-text-color: rgb(3, 0, 27);
+    --distinct-link-color: rgb(9, 0, 78);
     --projects-border-color: black;
-}
-body
-{
     font-size: 2.5vh;
     font-family: sans-serif;
     padding: 0%;
@@ -106,4 +103,12 @@ button
 #high_contrast
 {
     background-color: cyan;
+}
+#high_contrast_theme:target ~ #website
+{
+    --primary-color: #101010;
+    --secondary-color: #101010;
+    --project-text-color: cyan;
+    --distinct-link-color: yellow;
+    --projects-border-color: white;
 }
