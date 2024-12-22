@@ -20,7 +20,7 @@
 #Projects
 {
     border: solid 0.1vmin var(--projects-border-color);
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     color: var(--project-text-color);
     text-align: center;
     border-radius: 2%;
