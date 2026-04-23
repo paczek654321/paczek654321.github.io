@@ -19,6 +19,8 @@ body
 	width: 100%;
 	height: 100%;
 	background-color: var(--bg-color-two);
+
+	font-family: adwaita-sans, Arial, Impact;
 }
 body>div
 {
