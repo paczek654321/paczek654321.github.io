@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="main.css">
     <meta name="darkreader-lock">
+	<base target="_blank">
 </head>
 <body>
 	<div id="bg_gradient"></div>
@@ -16,10 +17,10 @@
 					I'm a programmer mostly interested in gamedev, tho over the years I have tried fullstack web development, modding, mobile app development and plenty other things. I try to make all art for my projects (including music) myself with varying levels of success.
 				</p>
 				<p>
-					<a href="mailto:paczek1024@proton.me" target="_blank">paczek1024@proton.me</a><br>
-					<a href="https://paczek1024.itch.io/" target="_blank">Itch.io</a><br>
-					<a href="https://www.youtube.com/@paczek1024"  target="_blank">YouTube</a><br>
-					<a href="https://github.com/paczek654321"  target="_blank">GitHub</a>
+					<a href="mailto:paczek1024@proton.me">paczek1024@proton.me</a><br>
+					<a href="https://paczek1024.itch.io/">Itch.io</a><br>
+					<a href="https://www.youtube.com/@paczek1024" >YouTube</a><br>
+					<a href="https://github.com/paczek654321" >GitHub</a>
 				</p>
 				<p class="footnote">I use Arch BTW</p>
 			</div>
@@ -31,9 +32,29 @@
 					This website has multiple themes that are implemented with just HTML and CSS, not a line of JS.
 				</p>
 				<div id="theme-selector">
-					<a href=""></a>
-					<a id="green_theme" href="#green_theme"></a>
+					<a target="_self" href=""></a>
+					<a target="_self" id="green_theme" href="#green_theme"></a>
 				</div>
+			</div>
+		</div>
+		<div class="box">
+			<img src="https://godotengine.org/assets/press/logo_vertical_color_dark.png"/>
+			<div>
+				<h2>Godot Engine Fork</h2>
+				<p>
+					A fork of the Godot Engine adjusted to suit my games better. Some of the changes include:
+				</p>
+					<ul>
+						<li>A new theme property that can change the font size and icon on buttons when pressed (<a href="https://github.com/paczek654321/godot/commit/36d571399d751223616d9161a62a013892123c2f">36d5713</a>, <a href="https://github.com/paczek654321/godot/commit/dc83dec83e7a909ed1217d57f0bdcf3c664f40ad">dc83dec</a>)</li>
+						<li>A project settings that can disable the focus mechanic on UI elements (<a href="https://github.com/paczek654321/godot/commit/4d4b81baace71be3a714f8d34672a0130e240974">4d4b81b</a>)</li>
+						<li>Changes to the GDScript parser to discourage problematic syntax (<a href="https://github.com/paczek654321/godot/commit/67aadb2e57cefd64a115a0de08e6e1ddc7d92814">67aadb2</a>, <a href="https://github.com/paczek654321/godot/commit/060becbdff1ca857e2d3410cbf541df2d2de6abe">060becb</a>)</li>
+						<li>Changes to the Scons build system settings to avoid some gcc crashes on older engine versions (<a href="https://github.com/paczek654321/godot/commit/1bbf9166aed32919273d233884df770f2a3fb941">1bbf916</a>)</li>
+						<li>A single float value constructor for all vector types (<a href="https://github.com/paczek654321/godot/commit/a6014a95b9c6e01673db303909d7c7ba9a195e44">a6014a9</a>)</li>
+						<li>Default values for class properties that are more intuitive or match the doccumentation (<a href="https://github.com/paczek654321/godot/commit/10176c0625f59a563b9396fbfa20167d929a409e">10176c0</a>, <a href="https://github.com/paczek654321/godot/commit/c837b2fbff80aae57e7af07b3951ce41d9bd50e2">c837b2f</a>)</li>
+						<li>A new StyleBox type that can merge 2 different SyleBoxFlat instances (<a href="https://github.com/paczek654321/godot/commit/131e364f05d109f53b3dfacea8d40b7210d9f1da">131e364</a>)</li>
+						<li>An option to shorten the text in inactive tabs of TabContainer (<a href="https://github.com/paczek654321/godot/commit/49637ac025d4422d55443876084ce8abb1d178c3">49637ac</a>, <a href="https://github.com/paczek654321/godot/commit/739ced2b315be6ccab9c26363e4a975bdf6d4e94">739ced2</a>)</li>
+						<li>An utility node for decoding GIF images into usable frames (<a href="https://github.com/paczek654321/godot/commit/6c7c8dbff525a756a6a00bea90839fa1284ec65f">6c7c8db</a>)</li>
+					</ul>
 			</div>
 		</div>
 	</div>
