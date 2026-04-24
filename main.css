@@ -19,13 +19,38 @@ p+p
 {
 	margin-top: 1em;
 }
+@property --bg-color-one
+{
+	syntax: '<color>';
+	initial-value: oklch(35% 0.15 140);
+	inherits: true;
+}
+@property --bg-color-two
+{
+	syntax: '<color>';
+	initial-value: oklch(30% 0.05 140);
+	inherits: true;
+}
+@property --highlight-color
+{
+	syntax: '<color>';
+	initial-value: oklch(85% 0.3 140);
+	inherits: true;
+}
+@property --border-color
+{
+	syntax: '<color>';
+	initial-value: oklch(50% 0.1 140);
+	inherits: true;
+}
+@property --low-profile-color
+{
+	syntax: '<color>';
+	initial-value: rgb(70, 70, 70);
+	inherits: true;
+}
 body
 {
-	--bg-color-one: rgb(38, 0, 135);
-	--bg-color-two: rgb(20, 20, 50);
-	--highlight-color: rgb(204, 184, 255);
-	--border-color: rgb(67, 52, 106);
-	--low-profile-color: rgb(65, 65, 65);
 	color: white;
 	
 	width: 100%;
@@ -33,6 +58,13 @@ body
 	background-color: var(--bg-color-two);
 
 	font-family: adwaita-sans, Arial, Impact;
+
+	transition:
+		--bg-color-one 0.5s ease,
+		--bg-color-two 0.5s ease,
+		--highlight-color 0.5s ease,
+		--border-color 0.5s ease,
+		--low-profile-color 0.5s ease;
 }
 body>div
 {
@@ -61,7 +93,6 @@ body>div
 	border: var(--border-color) solid 2px;
 	background-color: var(--bg-color-two);
 	width: 30%;
-	transition: border-color 0.5s ease;
 }
 .box:hover
 {
@@ -117,32 +148,61 @@ a
 	color: var(--highlight-color);
 	font-weight: bold;
 }
-#theme-selector
+body:has(#yavalanche:hover)
 {
-	margin: 1em;
+	--bg-color-one: rgb(38, 0, 135);
+	--bg-color-two: rgb(20, 20, 50);
+	--highlight-color: rgb(204, 184, 255);
+	--border-color: rgb(67, 52, 106);
 }
-#theme-selector>a
+body:has(#godot:hover)
 {
-	margin: 0.2em;
-	display: inline-block;
-	width: 2em;
-	height: 2em;
-	border-radius: 100%;
-	border: 2px solid var(--border-color);
+	--bg-color-one: oklch(20% 0.2 245);
+	--bg-color-two: oklch(20% 0.05 245);
+	--highlight-color: oklch(60% 0.2 245);
+	--border-color: oklch(60% 0.01 245);
 }
-#theme-selector>a[href=""]
+body:has(#dots:hover)
 {
-	background-color: blueviolet;
+	--bg-color-one: oklch(20% 0.1 330);
+	--bg-color-two: oklch(20% 0.05 330);
+	--highlight-color: oklch(80% 0.1 330);
+	--border-color: oklch(80% 0.01 330);
 }
-#green_theme
+body:has(#zeroad:hover), body:has(#selectall:hover)
 {
-	background-color: green;
+	--bg-color-one: oklch(40% 0.1 85);
+	--bg-color-two: oklch(25% 0.05 85);
+	--highlight-color: oklch(80% 0.1 85);
+	--border-color: oklch(80% 0.01 85);
+	color: #D7CAA1;
 }
-body:has(#green_theme:target)
+body:has(#quandary:hover)
 {
-	--bg-color-one: rgb(0, 135, 0);
-	--bg-color-two: rgb(20, 50, 21);
-	--highlight-color: rgb(46, 255, 23);
-	--border-color: rgb(52, 106, 52);
-	--low-profile-color: rgb(75, 75, 75);
+	--bg-color-one: oklch(40% 0.15 30);
+	--bg-color-two: oklch(20% 0.15 30);
+	--highlight-color: oklch(80% 0.2 30);
+	--border-color: oklch(10% 0.15 30);
+	color: #B29100;
+}
+body:has(#yellowcar:hover)
+{
+	--bg-color-one: oklch(34% 0.05 100);
+	--bg-color-two: oklch(34% 0.01 100);
+	--highlight-color: oklch(95% 0.21 100);
+	--border-color: oklch(95% 0.01 100);
+}
+body:has(#pongjs:hover)
+{
+	--bg-color-one: oklch(20% 0.32 330);
+	--bg-color-two: oklch(0% 0 0);
+	--highlight-color: oklch(70% 0.32 330);
+	--border-color: oklch(80% 0.1 330);
+}
+body:has(#webrtc:hover)
+{
+	--bg-color-one: oklch(20% 0.2 45);
+	--bg-color-two: oklch(20% 0.05 45);
+	--highlight-color: oklch(60% 0.2 45);
+	--border-color: oklch(60% 0.01 45);
 }
