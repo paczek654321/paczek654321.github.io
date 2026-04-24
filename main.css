@@ -107,7 +107,7 @@ body>div
 }
 @media(hover: none)
 {
-	.box::after
+	.box:not(:is(:hover, :active, :first-child:not(:has(+.box:is(:hover, :active)))))::after
 	{
 		content: "👆";
 		font-size: 2em;
