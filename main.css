@@ -105,12 +105,12 @@ body>div
 		width: 100%;
 	}
 }
-.box>img
+.box img
 {
 	height: 250px;
 	margin-right: 1em;
 }
-.box>div
+.box>div, .box>a
 {
 	display: flex;
 	flex-direction: column;
