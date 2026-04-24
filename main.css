@@ -94,7 +94,7 @@ body>div
 	background-color: var(--bg-color-two);
 	width: 30%;
 }
-.box:hover
+.box:is(:hover, :active)
 {
 	border-color: var(--highlight-color);
 }
@@ -143,33 +143,33 @@ a
 	color: var(--low-profile-color);
 	transition: color 0.5s ease;
 }
-.footnote:hover
+.footnote:is(:hover, :active)
 {
 	color: var(--highlight-color);
 	font-weight: bold;
 }
-body:has(#yavalanche:hover)
+body:has(#yavalanche:is(:hover, :active))
 {
 	--bg-color-one: rgb(38, 0, 135);
 	--bg-color-two: rgb(20, 20, 50);
 	--highlight-color: rgb(204, 184, 255);
 	--border-color: rgb(67, 52, 106);
 }
-body:has(#godot:hover)
+body:has(#godot:is(:hover, :active))
 {
 	--bg-color-one: oklch(20% 0.2 245);
 	--bg-color-two: oklch(20% 0.05 245);
 	--highlight-color: oklch(60% 0.2 245);
 	--border-color: oklch(60% 0.01 245);
 }
-body:has(#dots:hover)
+body:has(#dots:is(:hover, :active))
 {
 	--bg-color-one: oklch(20% 0.1 330);
 	--bg-color-two: oklch(20% 0.05 330);
 	--highlight-color: oklch(80% 0.1 330);
 	--border-color: oklch(80% 0.01 330);
 }
-body:has(#zeroad:hover), body:has(#selectall:hover)
+body:has(#zeroad:is(:hover, :active)), body:has(#selectall:is(:hover, :active))
 {
 	--bg-color-one: oklch(40% 0.1 85);
 	--bg-color-two: oklch(25% 0.05 85);
@@ -177,7 +177,7 @@ body:has(#zeroad:hover), body:has(#selectall:hover)
 	--border-color: oklch(80% 0.01 85);
 	color: #D7CAA1;
 }
-body:has(#quandary:hover)
+body:has(#quandary:is(:hover, :active))
 {
 	--bg-color-one: oklch(40% 0.15 30);
 	--bg-color-two: oklch(20% 0.15 30);
@@ -185,21 +185,21 @@ body:has(#quandary:hover)
 	--border-color: oklch(10% 0.15 30);
 	color: #B29100;
 }
-body:has(#yellowcar:hover)
+body:has(#yellowcar:is(:hover, :active))
 {
 	--bg-color-one: oklch(34% 0.05 100);
 	--bg-color-two: oklch(34% 0.01 100);
 	--highlight-color: oklch(95% 0.21 100);
 	--border-color: oklch(95% 0.01 100);
 }
-body:has(#pongjs:hover)
+body:has(#pongjs:is(:hover, :active))
 {
 	--bg-color-one: oklch(20% 0.32 330);
 	--bg-color-two: oklch(0% 0 0);
 	--highlight-color: oklch(70% 0.32 330);
 	--border-color: oklch(80% 0.1 330);
 }
-body:has(#webrtc:hover)
+body:has(#webrtc:is(:hover, :active))
 {
 	--bg-color-one: oklch(20% 0.2 45);
 	--bg-color-two: oklch(20% 0.05 45);
