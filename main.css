@@ -103,6 +103,19 @@ body>div
 	.box
 	{
 		width: 100%;
+	}	
+}
+@media(hover: none)
+{
+	.box::after
+	{
+		content: "👆";
+		font-size: 2em;
+		filter: grayscale(100%) brightness(50%);
+		background-color: rgba(255, 255, 255, 0.25);
+		border-radius: 100%;
+		height: min-content;
+		padding: 0.25em;
 	}
 }
 .box img
