@@ -177,10 +177,10 @@ body:has(#godot:is(:hover, :active))
 }
 body:has(#frame:is(:hover, :active))
 {
-	--bg-color-one: oklch(15% 0.2 260);
-	--bg-color-two: oklch(15% 0.1 260);
+	--bg-color-one: oklch(20% 0.2 220);
+	--bg-color-two: oklch(20% 0.1 220);
 	--highlight-color: oklch(90% 0.06 220);
-	--border-color: oklch(60% 0.01 260);
+	--border-color: oklch(60% 0.01 220);
 }
 body:has(#dots:is(:hover, :active))
 {
