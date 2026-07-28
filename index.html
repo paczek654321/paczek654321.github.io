@@ -96,21 +96,19 @@
 			<div>
 				<h2>Frame</h2>
 				<p>
-					A WebRTC-based multiplayer game currently in development. It is built with Godot and uses a Node.js WebSocket backend.
+					A WebRTC-based multiplayer party game made with a custom fork of Godot and a WebSocket-based Node.js backend.
 				</p>
-				<p>Gameplay loop:</p>
+				<p>The game was developed solo; feature highlights are as follows:</p>
 				<ul>
-					<li>Each player receives a question they must answer.</li>
-					<li>Each player is given an answer submitted by another player.</li>
-					<li>They must then create a question that makes the assigned answer sound funny or absurd.</li>
-					<li>Players can optionally attach an image or animated GIF as a header by pasting a link.</li>
-					<li>All players vote on their favorite remix.</li>
-					<li>The player(s) with the most votes earn a point.</li>
+					<li>A custom WebRTC signaling protocol with a lobby system.</li>
+					<li>Godot RPC-based netcode for the entire game (up to 8 players at once).</li>
+					<li>GIF image decoder integrated directly into a fork of the Godot Engine.</li>
+					<li>Downloading images from user-submitted URLs based on Open Graph metadata.</li>
+					<li>Client-side image caching system (bandwidth optimization + load time reduction).</li>
+					<li>Full gameplay implementation, with stylized UI and SFX.</li>
 				</ul>
 				<p>
-					<a href="https://discord.com/invite/VUjRmqXMwp">Discord</a><br>
-					<a href="https://itch.io/blog/1325727/frame-1">Devlog 1</a><br>
-					<a href="https://itch.io/blog/1451475/frame-2">Devlog 2</a><br>
+					<a href="https://paczek1024.itch.io/frame">Itch.io</a>
 				</p>
 			</div>
 		</div>
